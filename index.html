@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css">
+    <title>Music Player</title>
+</head>
+<body>
+
+    <div class="container">
+      
+        <div class="library"> 
+            <div class="playlist_title">
+                <!-- <div> <h2> Playlist:</h2> </div>
+                <div> <img src="imgs/close.jpg" id="close" alt="close" onclick="openLibrary()"> </div> -->
+                <h2> Playlist:</h2>
+                <img src="imgs/close-button.png" id="close" alt="close" onclick="openLibrary()">
+            </div>
+            <hr style="margin-bottom: 3rem;">
+        </div>
+
+        <div class="player">
+            <div class="button" onclick="openLibrary()">
+                <img src="imgs/library.png">
+                <p id="libraryBtn">Library</p>
+            </div>
+
+            <div class="artist_data">
+                <h2 id="song_name" onmouseout="noTransition(this)">Forever</h2>
+                <h3 id="artist"> dummy </h3>
+            </div>
+
+            <div class="songData">
+                <div class="song_details">
+                    <p id="time">00:00</p>
+                    <p id="duration">00:00</p>
+                </div>
+
+                <div class="slider">
+                    <input type="range" id="song_slider" min="0">
+                </div>
+
+                <audio src="music/The Motans EMAA - Insula.mp3"></audio>
+               
+              <!--  <input type="range" id="volume" max="100"> -->
+              <div class="controls">
+                <img class="player_controls backward" src="imgs/backwards.png">
+                <img class="player_controls" id="play" src="imgs/playy.png">
+                <img class="player_controls forward" src="imgs/fowards.png">
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
