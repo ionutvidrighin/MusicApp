@@ -157,7 +157,7 @@ var checkBgImg = setInterval(function(){
     } else {
         libraryBtn.style.color = 'black';
     }
-    console.log(bg.slice(34, -2))
+    console.log(bg.slice(49, -2))
 }, 2000);
 
 
