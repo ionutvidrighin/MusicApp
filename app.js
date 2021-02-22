@@ -140,7 +140,7 @@ var checkBgImg = setInterval(function(){
     let bgImg = bg.slice(44, -2);
     console.log(bg);
 
-    if (bgImg == '04.jpg' || bgImg == '10.jpg' || bgImg == '15.jpg' || bgImg == '17.jpg' ){
+    if (bgImg == 'pic04.jpg' || bgImg == 'pic10.jpg' || bgImg == 'pic15.jpg' || bgImg == 'pic17.jpg' ){
         song_name.style.color = 'black';
         song_name.style.borderColor = "gray";
         artist_name.style.color = 'black';
@@ -151,7 +151,7 @@ var checkBgImg = setInterval(function(){
         artist_name.style.color = 'white';
     }
 
-    if(bgImg == '16.jpg' || bgImg == '13.jpg' || bgImg == 'rever.jpg') {
+    if(bgImg == 'pic16.jpg' || bgImg == 'pic13.jpg' || bgImg == '/forever.jpg') {
         song_name.style.transition = "all 10s ease";
         libraryBtn.style.color = 'rgb(219, 219, 219)';
     } else {
