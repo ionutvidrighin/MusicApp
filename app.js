@@ -137,7 +137,7 @@ loadSong(songs[index]);
 //check the background image and switch text color to white/black
 var checkBgImg = setInterval(function(){
     let bg = window.getComputedStyle(updateImage).getPropertyValue('background-image');
-    let bgImg = bg.slice(49, -2);
+    let bgImg = bg.slice(43, -2);
     console.log(bg);
 
     if (bgImg == '04.jpg' || bgImg == '10.jpg' || bgImg == '15.jpg' || bgImg == '17.jpg' ){
@@ -157,7 +157,7 @@ var checkBgImg = setInterval(function(){
     } else {
         libraryBtn.style.color = 'black';
     }
-    console.log(bg.slice(49, -2))
+    console.log(bg.slice(43, -2))
 }, 2000);
 
 
@@ -213,7 +213,6 @@ playListSongs = songs.map((val, ind, arr) => {
 
     song.onclick = (e) => {
         let songName = e.target.textContent;
-        console.log(songName);
         switch(songName){
             case (ind+1) + ". " + "Zburătorul":
             audio.src = songs[ind].src;
