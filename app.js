@@ -137,7 +137,7 @@ loadSong(songs[index]);
 //check the background image and switch text color to white/black
 var checkBgImg = setInterval(function(){
     let bg = window.getComputedStyle(updateImage).getPropertyValue('background-image');
-    let bgImg = bg.slice(44, -2);
+    let bgImg = bg.slice(43, -2);
     console.log(bg);
 
     if (bgImg == 'pic04.jpg' || bgImg == 'pic10.jpg' || bgImg == 'pic15.jpg' || bgImg == 'pic17.jpg' ){
@@ -157,7 +157,7 @@ var checkBgImg = setInterval(function(){
     } else {
         libraryBtn.style.color = 'black';
     }
-    console.log(bg.slice(44, -2))
+    console.log(bg.slice(43, -2))
 }, 2000);
 
 
