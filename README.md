@@ -4,4 +4,4 @@ Features:
 - background image transitions
 - playlist available under 'Library button'
 
-Responsive layout for mobile phone screen
+Responsive layout for mobile devices
